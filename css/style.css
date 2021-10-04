@@ -1,8 +1,11 @@
 footer {
-  background-color: darkgray;
   text-align: center;
   padding: 1em 0 .3 0;
   color: white;
+}
+
+footer, nav {
+  background-color: darkgray;
 }
 .navigation {
   padding: .5rem;
@@ -10,14 +13,64 @@ footer {
   flex-direction: row;
   justify-content: space-between;
 }
-.flex-item {
-  flex-basis: 25%;
-  border-radius: 4px;
+.nav-items, .label {
+  flex-basis: 50%;
   margin: .25rem;
   padding: .5em;
   text-align: center;
+  font-weight: bold;
 }
-.label {
-  font-size: 1em;
-  font-weight: 600;
+
+.grid-container {
+  padding: 1em;
+  display: grid;
+  grid-gap: 1em 2em;
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid-item {
+  border: 2px dashed darkgray;
+  padding: .5em;
+}
+
+.grid-container {
+  grid-template-areas:
+                      "trending trending trending"
+                      "search search search"
+                      "breakfast lunch dinner"
+                      "foot foot foot";
+}
+.one {
+  grid-area: trending;
+}
+.one:last-child{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.two {
+  grid-area: search;
+}
+.two:first-child {
+    border: 1px solid grey;
+    border-radius: 5px;
+    height: 35px;
+    width: 100%;
+    padding: 2px 23px 2px 30px;
+    outline: 0;
+    background-color: #f5f5f5;
+}
+
+.three {
+  grid-area: breakfast;
+}
+.four {
+  grid-area: lunch;
+}
+.five {
+  grid-area: dinner;
+}
+.six {
+  grid-area: foot;
+}
 }
