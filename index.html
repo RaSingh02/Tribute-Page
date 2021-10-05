@@ -2,64 +2,92 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>RecipeBuddy</title>
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/844569d310.js" crossorigin="anonymous"></script>
-    <link href="css/reset.css" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <main id="homepage">
-      <section class="navigation">
-        <div class="nav-items">
-          <span class="label"><span class="material-icons", "active">home</span> Home</span>
+    <nav class="main-nav">
+      <div class="brand">
+        <img src="img/RBLogo.png" alt="recipeBuddy logo" >
+        <h1>RecipeBuddy</h1>
+      </div>
+      <div class="nav-links">
+        <a href="#">My Recipes</a>
+        <a href="#">Pantry</a>
+        <a href="#">Favorites</a>
+        <a href="#">Shopping List</a>
+        <a href="#" class="active"> <span class="material-icons md-24 active">home</span>Home </a>
+      </div>
+    </nav>
+    <main>
+      <header>
+        <img src="img/header.jpg" alt="cheese pizza with berries on side">
+        <div class="wrapper">
+          <img class="search-icon" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDU2Ljk2NiA1Ni45NjYiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDU2Ljk2NiA1Ni45NjY7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4Ij4KPHBhdGggZD0iTTU1LjE0Niw1MS44ODdMNDEuNTg4LDM3Ljc4NmMzLjQ4Ni00LjE0NCw1LjM5Ni05LjM1OCw1LjM5Ni0xNC43ODZjMC0xMi42ODItMTAuMzE4LTIzLTIzLTIzcy0yMywxMC4zMTgtMjMsMjMgIHMxMC4zMTgsMjMsMjMsMjNjNC43NjEsMCw5LjI5OC0xLjQzNiwxMy4xNzctNC4xNjJsMTMuNjYxLDE0LjIwOGMwLjU3MSwwLjU5MywxLjMzOSwwLjkyLDIuMTYyLDAuOTIgIGMwLjc3OSwwLDEuNTE4LTAuMjk3LDIuMDc5LTAuODM3QzU2LjI1NSw1NC45ODIsNTYuMjkzLDUzLjA4LDU1LjE0Niw1MS44ODd6IE0yMy45ODQsNmM5LjM3NCwwLDE3LDcuNjI2LDE3LDE3cy03LjYyNiwxNy0xNywxNyAgcy0xNy03LjYyNi0xNy0xN1MxNC42MSw2LDIzLjk4NCw2eiIgZmlsbD0iIzAwMDAwMCIvPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K" />
+          <input placeholder="Search"
+         type="text"
+         class="search">
+       </div>
+      </header>
+      <section class="odd">
+        <div class="img">
+          <img src="img/pie.jpeg" alt="strawberry-rhubarb pie on table" >
         </div>
-      <div class="nav-items">
-        <span class="label"><span class="material-icons">reorder</span> Recipes</span>
-      </div>
-      <div class="nav-items">
-        <span class="label"><span class="material-icons">kitchen</span> Pantry</span>
-      </div>
-      <div class="nav-items">
-        <span class="label"><span class="material-icons">add</span> New</span>
-      </div>
-      <div class="nav-items">
-        <span class="label"><span class="material-icons">account_circle</span> Account</span>
-      </div>
+        <div class="outer">
+          <div class="inner">
+            <h3>Strawberry-Rhubarb Pie</h3>
+            <p>A delicious pie made with fresh stawberries. With hints of cinnamon and vanilla, this pie is the perfect addition to any gathering or celebration.</p>
+            <button class="btn" href="#">View &#10140;</button>
+          </div>
+        </div>
       </section>
       <hr>
+      <section class="even">
+        <div class="outer">
+          <div class="inner">
+            <h3>Halloween Chocolate-Covered Strawberries</h3>
+            <p>Cute little monsters share the stage with pumpkins and ghosts on this Halloween dessert platter. For variety, you can create monsters with different colors of sanding sugar–just make sure to match the candy melting wafers to the sugar. You can make these treats several hours ahead and refrigerate them, but don’t refrigerate the monsters for longer than an hour as the moisture in the refrigerator will cause the candy eyes to run.</p>
+            <button class="btn" href="#">View &#10140;</button>
+          </div>
+        </div>
+        <div class="img">
+          <img src="img/chocolate-strawberry.jpeg" alt="chocolate covered strawberries with Halloween decorations">
+        </div>
+      </section>
+      <hr>
+      <section class="odd">
+        <div class="img">
+          <img src="img/seafood-mac.jpeg" alt="mac and cheese with crabmeat in a pan" >
+        </div>
+        <div class="outer">
+          <div class="inner">
+            <h3>Seafood Mac and Cheese</h3>
+            <p>In the mood for something creamy and fishy? Make this delicious mac and cheese with crabmeat that will ensure your spouse comes back for seconds! Perfect for family night or the neighborhood party!</p>
+            <button class="btn" href="#">View &#10140;</button>
+          </div>
+        </div>
+      </section>
+      <hr>
+      <section class="even">
+        <div class="outer">
+          <div class="inner">
+            <h3>Roasted Acorn Squash Halves</h3>
+            <p>Acorn squash is simply prepared with butter, salt and pepper but the caramelization from being roasted is the secret ingredient.</p>
+            <button class="btn" href="#">View &#10140;</button>
+          </div>
+        </div>
+        <div class="img">
+          <img src="img/squash.jpeg" alt="roasted acorn squash on plate" >
+        </div>
+      </section>
     </main>
-    <section class="grid-container">
-    <div class="grid-item one">
-        <img src="img/header.jpg" alt="Fork with Pasta" style="width:100%; height:20rem;" />
-        <h1 class="headertext">Recipe Buddy</h1>
-    </div>
-
-    <div class="grid-item two">
-        <form action="" class="searchbar">
-          <input type = "search" name = "search"
-            placeholder = "Search" />
-          <input type = "submit" value = "Search" />
-    </div>
-
-    <div class="grid-item three">
-      <p>Breakfast</p>
-    </div>
-
-    <div class="grid-item four">
-      <p>Lunch</p>
-    </div>
-
-    <div class="grid-item five">
-      <p>Dinner</p>
-    </div>
-
-    <div class="grid-item six">
+    <footer>
       <p>&copy; 2021 Randeep Singh</p>
-  </section>
+    </footer>
   </body>
 </html>
