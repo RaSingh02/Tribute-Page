@@ -58,7 +58,7 @@ body {
 }
 .material-icons {
   padding-left: .5rem;
-  vertical-align: baseline;
+  vertical-align: bottom;
 }
 .material-icons.md-24 {
   font-size: 24px;
